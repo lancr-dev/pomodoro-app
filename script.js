@@ -85,3 +85,24 @@ function formatTime(seconds) {
 if (currentPage.endsWith('/timer.html')) {
   initializeTimer();
 }
+
+const animatedItems = document.querySelectorAll('.animate-item');
+
+const animationObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  },
+);
+
+animatedItems.forEach((item) => {
+  animationObserver.observe(item);
+});
