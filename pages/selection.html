@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Choose a Pomodoro mode for focused work, breaks, or exercise."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Choose Mode | Pomodoro Timer</title>
+    <link rel="stylesheet" href="../styles/selection.css" />
+  </head>
+
+  <body>
+    <main class="pomodoro-selection">
+      <section
+        class="pomodoro-selection-section"
+        aria-labelledby="selection-title"
+      >
+        <h1 class="pomodoro-selection-title" id="selection-title">
+          CHOOSE YOUR MODE
+        </h1>
+
+        <div class="pomodoro-mode-grid">
+          <a
+            class="pomodoro-mode"
+            href="timer.html?mode=focus"
+            aria-label="Focus Mode, 25 minutes"
+          >
+            <span class="pomodoro-mode-name">FOCUS MODE</span>
+            <span class="pomodoro-mode-duration">25 mins</span>
+          </a>
+
+          <a
+            class="pomodoro-mode"
+            href="timer.html?mode=short-break"
+            aria-label="Short Break, 5 minutes"
+          >
+            <span class="pomodoro-mode-name">SHORT BREAK</span>
+            <span class="pomodoro-mode-duration">5 mins</span>
+          </a>
+
+          <a
+            class="pomodoro-mode"
+            href="timer.html?mode=long-break"
+            aria-label="Long Break, 15 minutes"
+          >
+            <span class="pomodoro-mode-name">LONG BREAK</span>
+            <span class="pomodoro-mode-duration">15 mins</span>
+          </a>
+
+          <a
+            class="pomodoro-mode"
+            href="timer.html?mode=exercise"
+            aria-label="Exercise, 15 minutes"
+          >
+            <span class="pomodoro-mode-name">EXERCISE</span>
+            <span class="pomodoro-mode-duration">15 mins</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

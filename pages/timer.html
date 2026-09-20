@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pomodoro timer for focused work, breaks, and exercise."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Timer | Pomodoro Timer</title>
+    <link rel="stylesheet" href="../styles/timer.css" />
+  </head>
+
+  <body>
+    <main class="pomodoro-timer">
+      <section class="pomodoro-timer-section" aria-labelledby="timer-mode">
+        <div class="pomodoro-timer-circle">
+          <svg
+            class="pomodoro-timer-progress"
+            viewBox="0 0 260 260"
+            aria-hidden="true"
+          >
+            <circle
+              class="pomodoro-timer-track"
+              cx="130"
+              cy="130"
+              r="120"
+            ></circle>
+
+            <circle
+              class="pomodoro-timer-stroke"
+              id="timer-progress"
+              cx="130"
+              cy="130"
+              r="120"
+            ></circle>
+          </svg>
+
+          <div class="pomodoro-timer-content">
+            <h1 class="pomodoro-timer-mode" id="timer-mode">FOCUS MODE</h1>
+
+            <time
+              class="pomodoro-timer-time"
+              id="timer-display"
+              datetime="PT25M"
+            >
+              25:00
+            </time>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <audio id="alarm-sound" src="../audio/alarm.mp3" preload="auto"></audio>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
