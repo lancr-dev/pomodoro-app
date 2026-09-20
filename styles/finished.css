@@ -74,6 +74,12 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.pomodoro-finished-button:hover {
+  background-color: #00000073;
+  color: white;
+  border: 1px solid white;
+}
+
 .animate-item {
   opacity: 0;
 
